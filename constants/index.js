@@ -8,7 +8,7 @@ const navLinks = [
         title: "About Us",
     },
     {
-        id: "work",
+        id: "art",
         title: "The Art",
     },
     {
@@ -105,7 +105,7 @@ const storeInfo = {
     address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
     contact: {
         phone: "(555) 987-6543",
-        email: "hello@jsmcocktail.com",
+        email: "hello@mcocktail.com",
     },
 };
 

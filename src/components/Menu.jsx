@@ -39,7 +39,7 @@ const Menu = () => {
     const nextCocktail = getCocktailAt(1);
 
     return (
-        <section id="menu" aria-labelledby="menu-heading">
+        <section id="menu" aria-labelledby="menu-heading" className='px-5'>
             <img src="/images/slider-left-leaf.png" alt="left-leaf" id="m-left-leaf" />
             <img src="/images/slider-right-leaf.png" alt="right-leaf" id="m-right-leaf" />
 
@@ -56,7 +56,7 @@ const Menu = () => {
 				${isActive
                                 ? 'text-white border-white'
                                 : 'text-white/50 border-white/50'}
-			 `} onClick={() => goToSlide(index)}
+			    `} onClick={() => goToSlide(index)}
                         >
                             {cocktail.name}
                         </button>
@@ -66,7 +66,7 @@ const Menu = () => {
 
             <div className="content">
                 <div className="arrows">
-                    <button className="text-left" onClick={() => goToSlide(currentIndex - 1)}>
+                    <button className="text-left ml-10" onClick={() => goToSlide(currentIndex - 1)}>
                         <span>{prevCocktail.name}</span>
                         <img src="/images/right-arrow.png" alt="right-arrow" aria-hidden="true" />
                     </button>
